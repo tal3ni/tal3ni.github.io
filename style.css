@@ -391,9 +391,10 @@ a.badge:hover {
 
 .float-chip {
   position: absolute;
-  /* Sits beside "What's going on?" in assets/Device.png, the one row with
-     empty space on its right. Physical `left`, not inset-inline-start: the
-     screenshot is the same on the Arabic page, so the chip must not mirror. */
+  /* Sits beside "What's going on?" in the hero screenshot — the one row with
+     empty space beside it. In assets/Device.png that space is on the right;
+     the RTL rule at the end of this file mirrors it for assets/Device-ar.png,
+     where the label is on the right and the space is on the left. */
   top: 61%;
   left: calc(50% + 50px);
   display: inline-flex;
@@ -1113,4 +1114,13 @@ body[dir="rtl"] .footer-col h4 {
 
 body[dir="rtl"] .hero .eyebrow {
   padding: 6px 10px 6px 14px;
+}
+
+/* Arabic hero screenshot: "إيه المشكلة؟" is on the right, so the chip goes
+   in the empty space to its left. See .float-chip. */
+body[dir="rtl"] .float-chip {
+  left: auto;
+  right: calc(50% + 50px);
+  /* The label sits higher here: Device-ar.png has no line above the plate. */
+  top: 58.5%;
 }
