@@ -1111,3 +1111,110 @@ body[dir="rtl"] .footer-col h4 {
 body[dir="rtl"] .hero .eyebrow {
   padding: 6px 10px 6px 14px;
 }
+
+/* ------------------------------------------------------------- app mock */
+/* Stand-in for a screenshot of the "send an alert" screen. Built in HTML so it
+   can never show a real person, and it reads the same in both languages. */
+
+.app-mock {
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 300 / 614;
+  background: #F4F3E8;
+  border: 10px solid #111;
+  border-radius: 44px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.45));
+  font-size: 13px;
+  color: var(--green-ink);
+  text-align: start;
+}
+
+.app-mock-header {
+  background: var(--green-dark);
+  color: white;
+  padding: 34px 20px 14px;
+  border-radius: 0 0 22px 22px;
+}
+
+.app-mock-header small { display: block; opacity: 0.85; font-size: 13px; }
+.app-mock-header strong { display: block; font-size: 30px; line-height: 1.1; }
+
+.app-mock-body { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+
+.app-mock-plate {
+  align-self: center;
+  width: 70%;
+  border: 3px solid #111;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-mock-plate .top {
+  background: #1E6FB8;
+  color: #111;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+}
+
+.app-mock-plate .bottom { display: grid; grid-template-columns: 1fr 1fr; font-size: 18px; }
+.app-mock-plate .bottom span { padding: 4px 0; }
+.app-mock-plate .bottom span + span { border-inline-start: 2px solid #111; }
+
+.app-mock-card {
+  background: white;
+  border: 2px solid rgba(27, 69, 62, 0.2);
+  border-radius: 18px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.app-mock-card h5 { margin: 0; font-size: 15px; line-height: 1.25; }
+
+.app-mock-car {
+  background: rgba(27, 69, 62, 0.08);
+  border: 1px solid rgba(27, 69, 62, 0.25);
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.app-mock-reason {
+  border: 2px solid rgba(27, 69, 62, 0.2);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.app-mock-reason.selected { background: var(--green-dark); border-color: var(--green-dark); color: white; }
+
+.app-mock-button {
+  background: var(--green-dark);
+  color: white;
+  border-radius: 10px;
+  padding: 9px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.app-mock-note {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #DBEAFE;
+  border-radius: 10px;
+  padding: 7px 9px;
+  font-size: 11px;
+  line-height: 1.35;
+}

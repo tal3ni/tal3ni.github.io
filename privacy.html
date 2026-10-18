@@ -27,7 +27,7 @@
 
   <main class="legal">
     <h1>Privacy Policy</h1>
-    <p class="effective">Effective Date: 26 August 2026</p>
+    <p class="effective">Effective Date: 18 October 2026</p>
 
     <h2>1. Information We Collect</h2>
     <h3>Information You Provide</h3>
@@ -42,6 +42,8 @@
     <ul>
       <li>Sign-in code requests — your phone number and the time of each request</li>
       <li>Search history — the plates you searched and the time of each search</li>
+      <li>Alerts — the alerts you send or receive (which car, the reason, the reply, and when), and any blocks or reports you make</li>
+      <li>Your device's push notification token, if you allow notifications</li>
       <li>Log data (IP address, access times)</li>
       <li>Session tokens stored locally on your device to keep you signed in</li>
     </ul>
@@ -61,22 +63,25 @@
     <ul>
       <li>Sign you in, using a one-time code delivered over WhatsApp</li>
       <li>Verify that a vehicle you register actually belongs to you</li>
-      <li>Display your contact information when another user searches for your registered plate</li>
-      <li>Prevent fraud and abuse, through rate limits and logs of verification and search activity</li>
+      <li>Pass alerts between users anonymously: when someone alerts a car you registered, we notify you without telling them who you are, and pass your reply back without telling you who they are</li>
+      <li>Prevent fraud and abuse, through rate limits, blocking, reports, and logs of verification, search and alert activity</li>
       <li>Improve the App and the user experience</li>
       <li>Comply with legal obligations</li>
     </ul>
 
     <h2>4. Information Sharing</h2>
     <p>We may disclose information to law enforcement where we are legally required to do so.</p>
-    <h3>Visible to other users</h3>
+    <h3>What other users can see</h3>
     <ul>
-      <li>When someone searches for a plate you have registered and verified, they can see your name, your profile photo if you uploaded one, your phone number, and your vehicle details if you provided them</li>
-      <li>Only verified vehicles are searchable. A vehicle you have not proven ownership of never resolves to your contact details</li>
+      <li>Other users never see your name, your profile photo, your phone number, or anything else that identifies you</li>
+      <li>When someone searches for a plate you have registered and verified, they learn only that the car is registered, and its make, model and colour if you entered them</li>
+      <li>Alerts are anonymous in both directions: the person who sends an alert never learns who you are, and you never learn who sent it. Replies are one of a few fixed phrases</li>
+      <li>Your name and profile photo are shown only to you, inside your own account</li>
     </ul>
     <h3>Service providers who process data for us</h3>
     <ul>
       <li>Supabase — database, authentication, and storage of profile photos</li>
+      <li>Expo (expo.dev) — delivers push notifications to your device</li>
       <li>Anthropic (Claude API) — reads the plate number from your two verification photographs. Images are transmitted for that single request and are not retained by us</li>
       <li>Wapilot — delivers your one-time sign-in code over WhatsApp</li>
     </ul>
@@ -97,12 +102,13 @@
       <li>Sign-in by one-time code rather than a stored password</li>
       <li>Vehicle registration requires proof of ownership before a plate becomes searchable</li>
       <li>Vehicle licence images are never stored</li>
-      <li>Contact details are not readable in bulk — they are returned one at a time, only for an exact plate, and only to a signed-in user</li>
-      <li>Daily limits on searches and on verification attempts, with both logged</li>
+      <li>No search, alert or other feature returns another user's name, phone number, photo or account identifier</li>
+      <li>Daily limits on searches, alerts and verification attempts, all logged</li>
+      <li>Owners can block anyone who alerts them, and either side can report an alert</li>
     </ul>
 
     <h2>7. Your Rights</h2>
-    <p>You can delete your account from Profile → Edit Profile → Delete account inside the App. Deletion is immediate and permanent: it removes your profile, your registered vehicles, your verification history, your search history, and your profile photo. Your plates become available for another user to register.</p>
+    <p>You can delete your account from Profile → Edit Profile → Delete account inside the App. Deletion is immediate and permanent: it removes your profile, your registered vehicles, your verification history, your search history, the alerts you sent or received, your blocks, your device's notification token, and your profile photo. Your plates become available for another user to register.</p>
     <p>If you no longer have the App installed, you can request the same deletion from the web at https://tal3ni.github.io/delete-account.html — no reinstall required.</p>
     <p>For anything else, contact noreply.tal3ni@gmail.com.</p>
     <ul>
@@ -118,6 +124,8 @@
       <li>Deleted accounts: removed immediately when you delete the account, not on a delay</li>
       <li>Vehicle licence and plate photographs: never stored</li>
       <li>Verification attempts: the plate that was read and the outcome are retained to enforce daily limits and detect abuse</li>
+      <li>Alerts: shown in the App for 7 days, and retained while both accounts involved exist, to enforce limits and investigate reports</li>
+      <li>Reports: retained to investigate abuse. If the reported user deletes their account, the report is kept without anything linking it to them</li>
       <li>Sign-in code requests: the phone number and the time of each request are kept in an abuse log that is not linked to your account and is not erased when you delete it. This is what stops the daily send limit from being reset by deleting and recreating an account</li>
     </ul>
 
