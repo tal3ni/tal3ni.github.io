@@ -65,7 +65,7 @@
       <li>When someone alerts a car you registered, send a copy of the alert to your own number on WhatsApp from the Tal3ni number. The message says only what the alert is about and which of your cars; it contains nothing about the sender. You can turn these messages off at any time in Profile → WhatsApp alerts</li>
       <li>Verify that a vehicle you register actually belongs to you</li>
       <li>Remind you to register a car if you have not yet. These reminders are scheduled on your own device and stop as soon as you register one</li>
-      <li>Show your name, your profile photo if you uploaded one, your phone number and your vehicle details to a signed-in user who searches the exact plate of a car you registered and verified, so they can contact you about it</li>
+      <li>Show your name, your profile photo if you uploaded one, your phone number and your vehicle details to a signed-in user who searches the exact plate of a car you registered and verified, so they can contact you about it, unless you turn off Show my number in your Profile, in which case they see only the car and can send you an alert</li>
       <li>Pass anonymous alerts between users: someone who prefers not to call can send you an alert instead, and your reply is passed back without telling either of you who the other is</li>
       <li>Show you your contact history: the plates you searched in the last 30 days, without the owners' details</li>
       <li>Prevent fraud and abuse, through rate limits, blocking, reports, and logs of verification, search and alert activity</li>
@@ -77,7 +77,7 @@
     <p>We may disclose information to law enforcement where we are legally required to do so.</p>
     <h3>What other users can see</h3>
     <ul>
-      <li>When a signed-in user searches the exact plate of a car you have registered and verified, they can see your name, your profile photo if you uploaded one, your phone number, and your vehicle details if you provided them</li>
+      <li>When a signed-in user searches the exact plate of a car you have registered and verified, they can see your name, your profile photo if you uploaded one, your phone number, and your vehicle details if you provided them. You can turn this off at any time in Profile → Show my number; they will then see only the car and can send you an alert</li>
       <li>Only verified vehicles are searchable, one exact plate at a time. There is no way to browse users or search by name</li>
       <li>If someone sends you an anonymous alert instead of calling, they learn nothing more about you, and you never learn who sent it. Replies are one of a few fixed phrases</li>
     </ul>
@@ -107,8 +107,8 @@
       <li>Vehicle licence images are never stored</li>
       <li>Contact details are never available in bulk: they are returned one owner at a time, only for an exact plate, only for a verified car, and only to a signed-in user</li>
       <li>Your contact history stores plates, never other users' names or numbers</li>
-      <li>Daily limits on searches, alerts and verification attempts, all logged</li>
-      <li>Owners can block anyone who alerts them, either side can report an alert, and you can report the owner of a plate you searched</li>
+      <li>Limits on searches (30 a day, and 5 a day for the same plate), alerts and verification attempts, all logged</li>
+      <li>Owners can block anyone who alerts them, either side can report an alert, and you can report the owner of a plate you searched. An owner can also report the number of someone who harassed them: if that account looked up their car, it can no longer reach them through the App. Accounts reported by three different people within 30 days are suspended</li>
     </ul>
 
     <h2>7. Your Rights</h2>
@@ -130,6 +130,7 @@
       <li>Verification attempts: the plate that was read and the outcome are retained to enforce daily limits and detect abuse</li>
       <li>Alerts: shown in the App for 30 days, and retained while both accounts involved exist, to enforce limits and investigate reports</li>
       <li>Reports: retained to investigate abuse. If the reported user deletes their account, the report is kept without anything linking it to them</li>
+      <li>Suspensions: if your account is suspended, your phone number stays on a suspension list even if you delete the account, so that a new account cannot reverse the suspension</li>
       <li>Sign-in code requests: the phone number and the time of each request are kept in an abuse log that is not linked to your account and is not erased when you delete it. This is what stops the daily send limit from being reset by deleting and recreating an account</li>
     </ul>
 
